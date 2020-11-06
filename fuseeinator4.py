@@ -1,6 +1,7 @@
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 from matplotlib import cm
+import os
 import numpy as np
 from math import *
 
@@ -27,7 +28,7 @@ def high(yo):
     i = 0
     high = []
     while i < n:
-        print("[", i ,"/", n, "]")
+        print("[", i ,"/", n, "]", int((i/n)*100), "%")
         h = 0
         yp = yo[i]
         yr = yo[i]
